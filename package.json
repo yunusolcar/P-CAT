@@ -1,0 +1,24 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAT Photo App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunusolcar/P-CAT.git"
+  },
+  "keywords": [
+    "photo",
+    "app",
+    "patika.dev",
+    "project"
+  ],
+  "author": "Yunus Olçar",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
+}
