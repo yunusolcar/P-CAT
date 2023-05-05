@@ -3,8 +3,10 @@ const path = require('path');
 const port = 3000;
 const app = express();
 
+//Template
 app.set('view engine', 'ejs');
 
+//Middleware
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
