@@ -1,9 +1,8 @@
 
 # P-CAT
 
-PCAT fotoğraf yükleme projesi
 
-
+PCAT - Photo Upload Project
 
 ## Ana Konu Başlıkları
 
