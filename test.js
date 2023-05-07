@@ -23,8 +23,6 @@ Photo.find({}).then((data) => console.log(data));
  
 
 //Update Photo
-const id = '64578d32209d29e16b4b68cf';
-
 Photo.findByIdAndUpdate(
      id,
      {
@@ -40,7 +38,7 @@ Photo.findByIdAndUpdate(
           console.log(err);
      });
 
-     
+
 //Delete Photos
 const id = '64578d32209d29e16b4b68cf';
 Photo.findByIdAndDelete(id)
