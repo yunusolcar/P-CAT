@@ -4,7 +4,7 @@
 
 PCAT - Photo Upload Project
 
-## Ana Konu Başlıkları
+## Bu projede öğrendiklerim
 
 **Prettier**
 
