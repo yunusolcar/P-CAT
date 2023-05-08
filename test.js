@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+/*const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //Connect Db
@@ -48,3 +48,4 @@ Photo.findByIdAndDelete(id)
      .catch((err) => {
           console.log(err);
      });
+*/
