@@ -8,8 +8,6 @@ PCAT - Photo Upload Project
 
 **Prettier**
 
-**Github**
-
 **Nodemon**
 
 **Statik Dosyalar**
