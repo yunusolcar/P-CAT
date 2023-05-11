@@ -34,11 +34,11 @@ PCAT - Photo Upload Project
 
 ## Preview
 
-![image](https://github.com/yunusolcar/P-CAT/assets/94309613/e5ba4187-e7df-4662-943f-1dec9c6e84c3)
+![image](https://github.com/yunusolcar/P-CAT/assets/94309613/eea29919-c791-4e36-bc9a-dd6e10a290e9)
 
-![image](https://github.com/yunusolcar/P-CAT/assets/94309613/f8669dec-67f4-4ff2-b67d-83fa30248979)
+![image](https://github.com/yunusolcar/P-CAT/assets/94309613/6b968d25-a585-46ee-b82b-9c8b059f212e)
 
-![image](https://github.com/yunusolcar/P-CAT/assets/94309613/b236ac4b-08cb-4a88-9903-cc809df35025)
+![image](https://github.com/yunusolcar/P-CAT/assets/94309613/56766091-bb62-4a22-8043-ced15e8515ce)
 
 
   
