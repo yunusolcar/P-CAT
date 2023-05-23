@@ -8,13 +8,13 @@
 
 **- MongoDB**
 
-**- Pagination**
-
 **- Atlas MongoDB Cloud**
 
 **- Render Cloud Application Hosting**
 
 **- CRUD - Create Read Upload Delete**
+
+**- Pagination**
 
 **- Static Files**
 
