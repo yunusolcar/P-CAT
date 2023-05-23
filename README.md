@@ -1,38 +1,32 @@
+<h1 align="center">PCAT - Photo Upload Project</h1>
 
-# P-CAT
+<h3 align="center">Bu projede öğrendiklerim </h3>
 
+**- Express.js**
 
-PCAT - Photo Upload Project
+**- MVC**
 
-## Bu projede öğrendiklerim
+**- MongoDB**
 
-**Prettier**
+**- Pagination**
 
-**Nodemon**
+**- Atlas MongoDB Cloud**
 
-**Statik Dosyalar**
+**- Render Cloud Application Hosting**
 
-**Template Engine**
+**- CRUD - Create Read Upload Delete**
 
-**Middleware Kavramı Giriş**
+**- Static Files**
 
-**Express**
+**- Template Engine**
 
-**MongoDB**
+**- Middleware**
 
-**Mongoose**
+**- Mongoose**
 
-**CRUD**
+**- Nodemon**
 
-**MVC**
-
-**Pagination (Sayfalama)**
-
-**Atlas MongoDB Cloud**
-
-**Render Cloud Application Hosting**
-
-## Preview
+<h2 align="center">Preview</h2>
 
 ![image](https://github.com/yunusolcar/P-CAT/assets/94309613/eea29919-c791-4e36-bc9a-dd6e10a290e9)
 
