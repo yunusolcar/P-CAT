@@ -30,7 +30,7 @@ PCAT - Photo Upload Project
 
 **Atlas MongoDB Cloud**
 
-**Heroku Deployment**
+**Render Cloud Application Hosting**
 
 ## Preview
 
