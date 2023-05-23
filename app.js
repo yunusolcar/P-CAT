@@ -4,13 +4,25 @@ const fileUpload = require('express-fileupload');
 const methodOverride = require('method-override');
 const ejs = require('ejs');
 const photoController = require('./controllers/photoControllers');
-const pageController = require('./controllers/pageControllers')
+const pageController = require('./controllers/pageControllers');
 
 const app = express();
 
-//Connect Db
-mongoose.connect('mongodb://127.0.0.1:27017/pcat-test-db');
 
+mongoose
+     .connect(
+          "mongodb+srv://Cluster0:fQNBOYbvFm8ddehM@cluster0.xerjh0h.mongodb.net/pcat-dbx?retryWrites=true&w=majority",
+          {
+               useNewUrlParser: true,
+               useUnifiedTopology: true,
+          }
+     )
+     .then(() => {
+          console.log('DB CONNECTED!');
+     })
+     .catch((err) => {
+          console.error(err);
+     });
 //Template Engine
 app.set('view engine', 'ejs');
 
@@ -37,5 +49,5 @@ app.get('/add', pageController.getAddPage);
 app.get('/photos/edit/:id', pageController.getEditPage);
 
 //Port
-const port = 3000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
