@@ -11,8 +11,7 @@ const app = express();
 
 mongoose
      .connect(
-          "mongodb+srv://Cluster0:fQNBOYbvFm8ddehM@cluster0.xerjh0h.mongodb.net/pcat-dbx?retryWrites=true&w=majority",
-          {
+          "mongodb+srv://Cluster0:fQNBOYbvFm8ddehM@cluster0.xerjh0h.mongodb.net/pcat-dbx?retryWrites=true&w=majority", {
                useNewUrlParser: true,
                useUnifiedTopology: true,
           }
@@ -28,7 +27,9 @@ app.set('view engine', 'ejs');
 
 //Middlewares
 app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+     extended: true
+}));
 app.use(express.json());
 app.use(fileUpload());
 app.use(
