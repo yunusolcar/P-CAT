@@ -10,7 +10,9 @@ exports.getAddPage = (req, res) => {
 }
 
 exports.getEditPage = async (req, res) => {
-     const photo = await Photo.findOne({ _id: req.params.id });
+     const photo = await Photo.findOne({
+          _id: req.params.id
+     });
      res.render('edit', {
           photo,
      });
