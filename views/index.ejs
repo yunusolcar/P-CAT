@@ -1,7 +1,10 @@
 <%- include('partials/_header') -%>
+
 <body>
      <div class="tm-page-wrap mx-auto">
           <div class="position-relative">
+               <%- include('partials/_navigation') -%>
+
                <div class="tm-welcome-container text-center text-white">
                     <div class="tm-welcome-container-inner">
                          <p class="tm-welcome-text mb-1 text-white">
@@ -10,22 +13,15 @@
                          <p class="tm-welcome-text mb-5 text-white">
                               This is a full-width video banner.
                          </p>
-                         <a
-                              href="#content"
-                              class="btn tm-btn-animate tm-btn-cta tm-icon-down"
-                         >
+                         <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
                               <span>Discover</span>
                          </a>
                     </div>
                </div>
-               <%- include('partials/_navigation') -%>
-               <div id="tm-video-container">
-                    <video autoplay muted loop id="tm-video">
-                         <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-                         <source src="video/wheat-field.mp4" type="video/mp4" />
-                    </video>
-               </div>
 
+               <div id="tm-video-container">
+                    <img src="img/main_bg.jpg" alt="" />
+               </div>
                <i id="tm-video-control-button" class="fas fa-plus"></i>
           </div>
 
@@ -34,32 +30,16 @@
                     <main>
                          <div class="row tm-catalog-item-list">
                               <% for(let i = 0 ; i < photos.length; i++ ) { %>
-                              <div
-                                   class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item"
-                              >
-                                   <div
-                                        class="position-relative tm-thumbnail-container"
-                                   >
-                                        <img
-                                             src="<%= photos[i].image %>"
-                                             alt="Image"
-                                             class="img-fluid tm-catalog-item-img"
-                                        />
-                                        <a
-                                             href="/photos/<%= photos[i]._id %>"
-                                             class="position-absolute tm-img-overlay"
-                                        >
-                                             <i
-                                                  class="fas fa-play tm-overlay-icon"
-                                             ></i>
+                              <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                                   <div class="position-relative tm-thumbnail-container">
+                                        <img src="<%= photos[i].image %>" alt="Image"
+                                             class="img-fluid tm-catalog-item-img" />
+                                        <a href="/photos/<%= photos[i]._id %>" class="position-absolute tm-img-overlay">
+                                             <i class="fas fa-play tm-overlay-icon"></i>
                                         </a>
                                    </div>
-                                   <div
-                                        class="p-4 tm-bg-gray tm-catalog-item-description"
-                                   >
-                                        <h3
-                                             class="tm-text-primary mb-3 tm-catalog-item-title"
-                                        >
+                                   <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                        <h3 class="tm-text-primary mb-3 tm-catalog-item-title">
                                              <%= photos[i].title %>
                                         </h3>
                                         <p class="tm-catalog-item-text">
@@ -73,19 +53,30 @@
                          <!-- Catalog Paging Buttons -->
                          <div>
                               <% if (pages > 0) { %>
-                                <ul class="nav tm-paging-links">
-                                  <% for (i=1; i <=pages; i++) { %>
-                                    <%   if (i == current) { %>
-                                      <li class="nav-item active"><a href="/?page=<%= i %>" class="nav-link tm-paging-link"><%= i %></a></li>
-                                    <% } else if (i < pages) { %>
-                                      <li class="nav-item"><a href="/?page=<%= i %>" class="nav-link tm-paging-link"><%= i %></a></li>
-                                    <%  } else { %>
-                                      <li class="nav-item"><a href="/?page=<%= i %>" class="nav-link tm-paging-link">...</a></li>
-                                    <%  } %>
-                                  <%  } %>
-                                </ul>
+                              <ul class="nav tm-paging-links">
+                                   <% for (i=1; i <=pages; i++) { %> <% if (i ==
+                                   current) { %>
+                                   <li class="nav-item active">
+                                        <a href="/?page=<%= i %>" class="nav-link tm-paging-link">
+                                             <%= i %>
+                                        </a>
+                                   </li>
+                                   <% } else if (i < pages) { %>
+                                   <li class="nav-item">
+                                        <a href="/?page=<%= i %>" class="nav-link tm-paging-link">
+                                             <%= i %>
+                                        </a>
+                                   </li>
+                                   <% } else { %>
+                                   <li class="nav-item">
+                                        <a href="/?page=<%= i %>" class="nav-link tm-paging-link">
+                                             ...
+                                        </a>
+                                   </li>
+                                   <% } %> <% } %>
+                              </ul>
                               <% } %>
-                             </div>
+                         </div>
                     </main>
 
                     <!-- Subscribe form and footer links -->
