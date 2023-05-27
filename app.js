@@ -11,7 +11,7 @@ const app = express();
 
 mongoose
      .connect(
-          "mongodb+srv://Cluster0:jdkpmwQmdqgI13eh@cluster0.xerjh0h.mongodb.net/pcat-dbx?retryWrites=true&w=majority", {
+          "mongodb+srv://Cluster0:8kyaicnVyUHFJUUM@cluster0.xerjh0h.mongodb.net/pcat-dbx?retryWrites=true&w=majority", {
                useNewUrlParser: true,
                useUnifiedTopology: true,
           }
