@@ -1,6 +1,10 @@
 <h1 align="center">PCAT - Photo Upload Project</h1>
 
-<h3 align="center">Bu projede öğrendiklerim </h3>
+<h2 align="center">A project that allows you to upload, view, and delete photos with ease.</h3>
+
+<br>
+
+<h3 align="center">Technologies</b></h3>
 
 **- Express.js**
 
@@ -26,7 +30,7 @@
 
 **- Nodemon**
 
-<h2 align="center">Preview</h2>
+<h3 align="center">Preview</h3>
 
 ![image](https://github.com/yunusolcar/P-CAT/assets/94309613/eea29919-c791-4e36-bc9a-dd6e10a290e9)
 
