@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.route('/about').get(pageController.getAboutPage);
 router.route('/add').get(pageController.getAddPage);
-router.route('photos/edit/:id').get(pageController.getEditPage);
+router.route('/photos/edit/:id').get(pageController.getEditPage);
 
 router.route('/').get(photoController.getAllPhotos);
 router.route('/photos/:id').get(photoController.getPhoto);
