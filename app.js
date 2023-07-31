@@ -3,25 +3,20 @@ const mongoose = require('mongoose');
 const fileUpload = require('express-fileupload');
 const methodOverride = require('method-override');
 const ejs = require('ejs');
-const photoController = require('./controllers/photoControllers');
-const pageController = require('./controllers/pageControllers');
+require('dotenv').config();
+const pageRoute = require('./routes/pageRoute')
 
 const app = express();
 
-
-mongoose
-     .connect(
-          "mongodb+srv://Cluster0:fQNBOYbvFm8ddehM@cluster0.xerjh0h.mongodb.net/pcat-dbx?retryWrites=true&w=majority", {
-               useNewUrlParser: true,
-               useUnifiedTopology: true,
-          }
-     )
+//DB Connection
+mongoose.connect(process.env.mongokey)
      .then(() => {
           console.log('DB CONNECTED!');
      })
      .catch((err) => {
           console.error(err);
      });
+
 //Template Engine
 app.set('view engine', 'ejs');
 
@@ -39,16 +34,8 @@ app.use(
 );
 
 //Routes
-app.get('/', photoController.getAllPhotos);
-app.get('/photos/:id', photoController.getPhoto);
-app.post('/photos', photoController.createPhoto);
-app.put('/photos/:id', photoController.updatePhoto);
-app.delete('/photos/:id', photoController.deletePhoto);
-
-app.get('/about', pageController.getAboutPage);
-app.get('/add', pageController.getAddPage);
-app.get('/photos/edit/:id', pageController.getEditPage);
+app.use('/', pageRoute);
 
 //Port
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
