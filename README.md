@@ -6,9 +6,9 @@
 
 <h3 align="center">Technologies</b></h3>
 
-**- Express.js**
+**- Node.js **
 
-**- MVC**
+**- Express.js**
 
 **- MongoDB**
 
@@ -16,19 +16,6 @@
 
 **- Render Cloud Application Hosting**
 
-**- CRUD - Create Read Upload Delete**
-
-**- Pagination**
-
-**- Static Files**
-
-**- Template Engine**
-
-**- Middleware**
-
-**- Mongoose**
-
-**- Nodemon**
 
 <h3 align="center">Preview</h3>
 
