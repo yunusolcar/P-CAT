@@ -6,7 +6,7 @@
 
 <h3 align="center">Technologies</b></h3>
 
-**- Node.js **
+**- Node.js**
 
 **- Express.js**
 
